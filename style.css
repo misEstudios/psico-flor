@@ -8,7 +8,15 @@
 }
 
 .logos {
-    height: 2rem;
+    height: 3rem;
+}
+
+#open-close {
+    font-size: 2rem;
+}
+
+header {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 nav {
@@ -30,6 +38,7 @@ nav {
     align-items: end;
     padding: 1rem;
     list-style-type: none;
+    background-color: white;
 }
 
 a {
@@ -38,4 +47,63 @@ a {
     font-weight: 700;
     text-decoration: none;
     cursor: pointer;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada {
+    width: 50%;
+}
+
+.categorias {
+    width: 50%;
+    margin: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.categorias img {
+    width: 50%;
+    border-radius: 1rem;
+}
+
+.tarjeta {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.descripcion > p {
+    margin-bottom: 1rem;
+}
+
+
+/* pie */
+footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding-block: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 2rem;
+  bottom: 0; }
+
+.pie {
+    font-size: 1rem;
+    color: white;
 }
