@@ -49,6 +49,8 @@ a {
     cursor: pointer;
 }
 
+
+
 main {
     width: 100%;
     display: flex;
@@ -58,6 +60,13 @@ main {
 
 .portada {
     width: 50%;
+    height: 100vh;
+    background-image: url("img/portada.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    top: 0;
 }
 
 .categorias {
@@ -87,7 +96,7 @@ main {
 }
 
 .descripcion > p {
-    margin-bottom: 1rem;
+    margin-block: 1rem;
 }
 
 
@@ -106,4 +115,28 @@ footer {
 .pie {
     font-size: 1rem;
     color: white;
+}
+
+@media (max-width: 650px) {
+    .portada {
+        position: absolute;
+        background-image: none;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .categorias {
+        width: 100%;
+    }
+
+    .tarjeta {
+        background-color: rgba(250, 235, 215, 0.8);
+        flex-direction: column;
+    }
+
+    .categorias img {
+        width: 100%;
+        border-radius: 1rem;
+    }
+
 }
